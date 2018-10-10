@@ -55,6 +55,13 @@ TYPO3_GFX_PROCESSOR = "ImageMagick"
 TYPO3_GFX_PROCESSOR_PATH = "/usr/bin/"
 TYPO3_GFX_PROCESSOR_PATH_LZW = "/usr/bin/"
 
+# Mail
+TYPO3_MAIL_TRANSPORT = "smtp"
+TYPO3_MAIL_TRANSPORT_SMTP_SERVER = "localhost:1025"
+
+# System
+TYPO3_TRUSTED_HOST_PATTERN = "introduction.ddev.local"
+
 # Site
 SITE_INTRODUCTION_BASE = "http://introduction.ddev.local/"
 ```
