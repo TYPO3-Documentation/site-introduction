@@ -25,36 +25,3 @@ $GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = getenv('TYPO3_MAI
 
 // System
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = getenv('TYPO3_TRUSTED_HOST_PATTERN');
-
-// Caching
-if (!function_exists('setCacheBackend')) {
-    function setCacheBackend($backendClassName, $cacheName)
-    {
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$cacheName]['backend'] = $backendClassName;
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$cacheName]['options'] = [];
-    }
-}
-$apcExtensionLoaded = extension_loaded('apc');
-$apcuExtensionLoaded = extension_loaded('apcu');
-$apcAvailable = $apcExtensionLoaded || $apcuExtensionLoaded;
-$apcEnabled = ini_get('apc.enabled') == TRUE;
-if (TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext() !== 'Development' && $apcAvailable && $apcEnabled) {
-    $backendClassName = $apcExtensionLoaded ? 'TYPO3\\CMS\\Core\\Cache\\Backend\\ApcBackend'
-        : 'TYPO3\\CMS\\Core\\Cache\\Backend\\ApcuBackend';
-} else {
-    $backendClassName = 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend';
-}
-setCacheBackend($backendClassName, 'adminpanel_requestcache');
-setCacheBackend($backendClassName, 'cache_hash');
-setCacheBackend($backendClassName, 'cache_imagesizes');
-setCacheBackend($backendClassName, 'cache_pages');
-setCacheBackend($backendClassName, 'cache_pagesection');
-setCacheBackend($backendClassName, 'cache_rootline');
-setCacheBackend($backendClassName, 'extbase_datamapfactory_datamap');
-setCacheBackend($backendClassName, 'extbase_object');
-setCacheBackend($backendClassName, 'extbase_reflection');
-setCacheBackend($backendClassName, 'extbase_typo3dbbackend_queries');
-setCacheBackend($backendClassName, 'extbase_typo3dbbackend_tablecolumns');
-if (PHP_SAPI === 'cli') {
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['extbase_object']['backend'] = 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend';
-}
