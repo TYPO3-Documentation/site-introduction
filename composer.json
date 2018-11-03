@@ -53,6 +53,9 @@
         "typo3/cms-workspaces": "^9.5.0",
         "vlucas/phpdotenv": "^2.4"
     },
+    "require-dev": {
+        "codeception/codeception": "^2.5.1"
+    },
     "config": {
         "sort-packages": true,
         "bin-dir": "bin",

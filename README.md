@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/benjaminkott/site-introduction.svg?branch=master)](https://travis-ci.org/benjaminkott/site-introduction)
+
 # DDEV Setup
 
 To use this repository we recommend to use ddev as environment. Please download
@@ -33,6 +35,13 @@ within the container without the need to log into it.
 
 * Composer Install: `ddev exec composer install -d /var/www/html`
 * Database Export: `ddev exec php ../bin/typo3 ddev:exportdb`
+
+# Execute acceptance tests
+
+The ddev setup comes with a selenium-chrome container, codeception and some
+acceptance tests ready to run.
+
+* Run tests: ddev exec ../bin/codecept run acceptance -d -c ../Tests/codeception.yml
 
 # Environment Variables
 
