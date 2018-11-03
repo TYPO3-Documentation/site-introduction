@@ -7,7 +7,7 @@ sudo: true
 
 before_install:
   - sudo apt update -y
-  - sudo apt install --only-upgrade docker-ce -y
+  - sudo apt install --only-upgrade docker-ce docker-compose -y
   - docker info
 
 before_script:
