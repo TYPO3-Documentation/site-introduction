@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/benjaminkott/site-introduction.svg?branch=master)](https://travis-ci.org/benjaminkott/site-introduction)
+
 # DDEV Setup
 
 To use this repository we recommend to use ddev as environment. Please download
