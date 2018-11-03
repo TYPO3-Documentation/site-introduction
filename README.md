@@ -22,7 +22,7 @@ and install DDEV https://github.com/drud/ddev/releases.
 # Admin Tools
 
 * URL: http://introduction.ddev.local/typo3/install.php
-* Admin Tools:
+* Password: `password`
 
 # Executing Commands
 
