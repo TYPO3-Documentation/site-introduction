@@ -5,6 +5,11 @@ php:
 
 sudo: true
 
+before_install:
+  - sudo apt update -y
+  - sudo apt install --only-upgrade docker-ce -y
+  - docker info
+
 before_script:
   - curl -L https://raw.githubusercontent.com/drud/ddev/master/install_ddev.sh | sudo bash
 
