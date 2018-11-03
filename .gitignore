@@ -15,3 +15,4 @@
 /.env
 /.idea
 composer.lock
+Tests/Acceptance/Support/_generated/
