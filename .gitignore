@@ -13,3 +13,5 @@
 /var
 /vendor
 /.env
+/.idea
+composer.lock
