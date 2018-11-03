@@ -34,6 +34,13 @@ within the container without the need to log into it.
 * Composer Install: `ddev exec composer install -d /var/www/html`
 * Database Export: `ddev exec php ../bin/typo3 ddev:exportdb`
 
+# Execute acceptance tests
+
+The ddev setup comes with a selenium-chrome container, codeception and some
+acceptance tests ready to run.
+
+* Run tests: ddev exec ../bin/codecept run acceptance -d -c ../Tests/codeception.yml
+
 # Environment Variables
 
 This setup is preconfigured to work with ddev. If you plan to use this setup
