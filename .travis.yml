@@ -17,7 +17,7 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
   # Install ddev
-  - curl -L https://raw.githubusercontent.com/drud/ddev/master/install_ddev.sh | sudo bash
+  - curl -L https://raw.githubusercontent.com/drud/ddev/master/scripts/install_ddev.sh | sudo bash
 
 script:
   - >
