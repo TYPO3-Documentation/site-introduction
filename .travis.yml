@@ -18,6 +18,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   # Install ddev
   - curl -L https://raw.githubusercontent.com/drud/ddev/master/scripts/install_ddev.sh | sudo bash
+  - ddev config global --instrumentation-opt-in=false
 
 script:
   - >
