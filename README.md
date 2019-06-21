@@ -5,9 +5,12 @@
 To use this repository we recommend to use ddev as environment. Please download
 and install DDEV https://github.com/drud/ddev/releases.
 
+[LINUX] Change permissions of ./var to 0777 (`chmod 0777 ./var/cache`) on host
+
 * `ddev start`
 * `ddev import-db --src=./data/db.sql`
 * `ddev import-files --src=./assets`
+* `ddev composer install`
 
 # Frontend
 
@@ -33,7 +36,7 @@ these commands within the ddev containers. You can easily log into the web
 container by executing the command `ddev ssh`. Its also possible to run commands
 within the container without the need to log into it.
 
-* Composer Install: `ddev exec composer install -d /var/www/html`
+* Composer Install: `ddev exec composer install`
 * Database Export: `ddev exec php bin/typo3 ddev:exportdb`
 
 # Execute acceptance tests

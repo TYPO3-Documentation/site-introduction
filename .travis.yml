@@ -26,4 +26,5 @@ script:
     ddev start;
     ddev import-db --src=./data/db.sql;
     ddev import-files --src=./assets;
+    ddev composer install;
     ddev exec ./bin/codecept run acceptance -d -c ./Tests/codeception.yml
