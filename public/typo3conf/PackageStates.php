@@ -11,6 +11,15 @@ return [
         'core' => [
             'packagePath' => 'typo3/sysext/core/',
         ],
+        'filelist' => [
+            'packagePath' => 'typo3/sysext/filelist/',
+        ],
+        'impexp' => [
+            'packagePath' => 'typo3/sysext/impexp/',
+        ],
+        'form' => [
+            'packagePath' => 'typo3/sysext/form/',
+        ],
         'scheduler' => [
             'packagePath' => 'typo3/sysext/scheduler/',
         ],
@@ -28,6 +37,12 @@ return [
         ],
         'linkvalidator' => [
             'packagePath' => 'typo3/sysext/linkvalidator/',
+        ],
+        'recordlist' => [
+            'packagePath' => 'typo3/sysext/recordlist/',
+        ],
+        'backend' => [
+            'packagePath' => 'typo3/sysext/backend/',
         ],
         'indexed_search' => [
             'packagePath' => 'typo3/sysext/indexed_search/',
@@ -53,12 +68,6 @@ return [
         'about' => [
             'packagePath' => 'typo3/sysext/about/',
         ],
-        'adminpanel' => [
-            'packagePath' => 'typo3/sysext/adminpanel/',
-        ],
-        'backend' => [
-            'packagePath' => 'typo3/sysext/backend/',
-        ],
         'belog' => [
             'packagePath' => 'typo3/sysext/belog/',
         ],
@@ -74,29 +83,17 @@ return [
         'felogin' => [
             'packagePath' => 'typo3/sysext/felogin/',
         ],
-        'filelist' => [
-            'packagePath' => 'typo3/sysext/filelist/',
-        ],
         'filemetadata' => [
             'packagePath' => 'typo3/sysext/filemetadata/',
         ],
-        'form' => [
-            'packagePath' => 'typo3/sysext/form/',
-        ],
         'frontend' => [
             'packagePath' => 'typo3/sysext/frontend/',
-        ],
-        'impexp' => [
-            'packagePath' => 'typo3/sysext/impexp/',
         ],
         'lowlevel' => [
             'packagePath' => 'typo3/sysext/lowlevel/',
         ],
         'opendocs' => [
             'packagePath' => 'typo3/sysext/opendocs/',
-        ],
-        'recordlist' => [
-            'packagePath' => 'typo3/sysext/recordlist/',
         ],
         'redirects' => [
             'packagePath' => 'typo3/sysext/redirects/',
