@@ -58,6 +58,11 @@
     "require-dev": {
         "codeception/codeception": "^2.5.1"
     },
+    "scripts": {
+      "test": [
+        "codecept run acceptance -d -c ./Tests/codeception.yml"
+      ]
+    },
     "config": {
         "sort-packages": true,
         "bin-dir": "bin",
