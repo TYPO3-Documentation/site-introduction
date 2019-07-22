@@ -36,15 +36,15 @@ these commands within the ddev containers. You can easily log into the web
 container by executing the command `ddev ssh`. Its also possible to run commands
 within the container without the need to log into it.
 
-* Composer Install: `ddev exec composer install`
-* Database Export: `ddev exec php bin/typo3 ddev:exportdb`
+* Composer Install: `ddev composer install`
+* Database Export: `ddev exec bin/typo3 ddev:exportdb`
 
 # Execute acceptance tests
 
 The ddev setup comes with a selenium-chrome container, codeception and some
 acceptance tests ready to run.
 
-* Run tests: ddev exec bin/codecept run acceptance -d -c Tests/codeception.yml
+* Run tests: `ddev composer test`
 
 # Environment Variables
 
@@ -72,8 +72,8 @@ TYPO3_MAIL_TRANSPORT = "smtp"
 TYPO3_MAIL_TRANSPORT_SMTP_SERVER = "localhost:1025"
 
 # System
-TYPO3_TRUSTED_HOST_PATTERN = "introduction.ddev.local"
+TYPO3_TRUSTED_HOST_PATTERN = "introduction.ddev.site"
 
 # Site
-SITE_INTRODUCTION_BASE = "http://introduction.ddev.local/"
+SITE_INTRODUCTION_BASE = "http://introduction.ddev.site/"
 ```
