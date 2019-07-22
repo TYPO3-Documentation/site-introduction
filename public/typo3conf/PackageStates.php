@@ -68,6 +68,9 @@ return [
         'about' => [
             'packagePath' => 'typo3/sysext/about/',
         ],
+        'adminpanel' => [
+            'packagePath' => 'typo3/sysext/adminpanel/',
+        ],
         'belog' => [
             'packagePath' => 'typo3/sysext/belog/',
         ],
