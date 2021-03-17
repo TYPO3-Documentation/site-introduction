@@ -1,5 +1,6 @@
 APIVersion: v1.8.0
 name: introduction
+project_tld: ddev.local
 type: typo3
 docroot: public
 php_version: "7.2"
