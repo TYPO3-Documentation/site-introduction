@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/benjaminkott/site-introduction.svg?branch=master)](https://travis-ci.org/benjaminkott/site-introduction)
+![Build Status](https://github.com/benjaminkott/site-introduction/actions/workflows/tests.yml/badge.svg)
+
 
 # DDEV Setup
 
