@@ -15,19 +15,19 @@ and install DDEV https://github.com/drud/ddev/releases.
 
 # Frontend
 
-* TYPO3: http://introduction.ddev.site
+* TYPO3: https://introduction.ddev.site
 * Mail Hogg: http://introduction.ddev.site:8025
 * PHP My Admin: http://introduction.ddev.site:8036
 
 # Credentials Backend
 
-* URL: http://introduction.ddev.site/typo3
+* URL: https://introduction.ddev.site/typo3
 * Username: `admin`
 * Password: `password`
 
 # Admin Tools
 
-* URL: http://introduction.ddev.site/typo3/install.php
+* URL: https://introduction.ddev.site/typo3/install.php
 * Password: `password`
 
 # Executing Commands
@@ -76,5 +76,5 @@ TYPO3_MAIL_TRANSPORT_SMTP_SERVER = "localhost:1025"
 TYPO3_TRUSTED_HOST_PATTERN = "introduction.ddev.site"
 
 # Site
-SITE_INTRODUCTION_BASE = "http://introduction.ddev.site/"
+SITE_INTRODUCTION_BASE = "https://introduction.ddev.site/"
 ```
