@@ -12,7 +12,7 @@ mariadb_version: "10.2"
 mysql_version: ""
 provider: default
 use_dns_when_possible: true
-composer_version: ""
+composer_version: "2"
 
 
 # This config.yaml was created with ddev version v1.16.7
