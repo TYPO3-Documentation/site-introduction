@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/benjaminkott/site-introduction.svg?branch=master)](https://travis-ci.org/benjaminkott/site-introduction)
+![Build Status](https://github.com/benjaminkott/site-introduction/actions/workflows/tests.yml/badge.svg)
+
 
 # DDEV Setup
 
@@ -14,19 +15,19 @@ and install DDEV https://github.com/drud/ddev/releases.
 
 # Frontend
 
-* TYPO3: http://introduction.ddev.local
-* Mail Hogg: http://introduction.ddev.local:8025
-* PHP My Admin: http://introduction.ddev.local:8036
+* TYPO3: https://introduction.ddev.site
+* Mail Hogg: http://introduction.ddev.site:8025
+* PHP My Admin: http://introduction.ddev.site:8036
 
 # Credentials Backend
 
-* URL: http://introduction.ddev.local/typo3
+* URL: https://introduction.ddev.site/typo3
 * Username: `admin`
 * Password: `password`
 
 # Admin Tools
 
-* URL: http://introduction.ddev.local/typo3/install.php
+* URL: https://introduction.ddev.site/typo3/install.php
 * Password: `password`
 
 # Executing Commands
@@ -72,8 +73,8 @@ TYPO3_MAIL_TRANSPORT = "smtp"
 TYPO3_MAIL_TRANSPORT_SMTP_SERVER = "localhost:1025"
 
 # System
-TYPO3_TRUSTED_HOST_PATTERN = "introduction.ddev.local"
+TYPO3_TRUSTED_HOST_PATTERN = "introduction.ddev.site"
 
 # Site
-SITE_INTRODUCTION_BASE = "http://introduction.ddev.local/"
+SITE_INTRODUCTION_BASE = "https://introduction.ddev.site/"
 ```

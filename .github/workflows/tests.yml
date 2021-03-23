@@ -1,0 +1,32 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  testsuite:
+    name: all tests
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Start DDEV
+        uses: jonaseberle/github-action-setup-ddev@v1
+
+      - name: Import database
+        run: ddev import-db --src=./data/db.sql
+
+      - name: Import files
+        run: ddev import-files --src=./assets
+
+      - name: Install composer packages
+        run: ddev composer install
+
+      - name: Allow public access of var folder
+        run: sudo chmod 0777 ./var
+
+      - name: Run acceptance tests
+        run: ddev exec bin/codecept run acceptance -d -c Tests/codeception.yml

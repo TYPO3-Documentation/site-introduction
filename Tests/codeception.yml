@@ -7,7 +7,7 @@ suites:
       enabled:
         - Asserts
         - WebDriver:
-            url: http://introduction.ddev.local
+            url: https://introduction.ddev.site
             browser: chrome
             host: ddev-introduction-chrome
             wait: 1
