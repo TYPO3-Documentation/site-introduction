@@ -1,4 +1,4 @@
-![Build Status](https://github.com/benjaminkott/site-introduction/actions/workflows/tests.yml/badge.svg)
+![Build Status](https://github.com/TYPO3-Documentation/site-introduction/actions/workflows/tests.yml/badge.svg)
 
 
 # DDEV Setup
