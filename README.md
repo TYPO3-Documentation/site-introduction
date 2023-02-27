@@ -46,7 +46,7 @@ To execute acceptance tests the selenium service has to be enabled before starti
 This can be done by renaming the file `.ddev/docker-compose.chrome.yaml.inactive`
 to `.ddev/docker-compose.chrome.yaml.inactive`.  
 Consideradtion for deactivating the service by default has been that other tests run
-siginficantally faster when this service is deactivated.
+significantly faster when this service is deactivated.
 
 The ddev setup comes with a selenium-chrome container, codeception and some
 acceptance tests ready to run.
