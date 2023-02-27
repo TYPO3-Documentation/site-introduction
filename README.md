@@ -15,9 +15,10 @@ and install DDEV https://github.com/drud/ddev/releases.
 
 # TYPO3 Version
 
-By default this installation includes TYPO3 v11.  
+The development of this installation started with TYPO3 v11.  
 There exists a branch `task/v10-0` with TYPO3 v10, currently there is no guarantee
-that this is running well though.
+that this is running well though.  
+Future branches will include a version number that indicates the TYPO3 version.
 
 # Frontend
 
