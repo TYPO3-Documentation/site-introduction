@@ -60,7 +60,7 @@
         "sort-packages": true,
         "bin-dir": "bin",
         "vendor-dir": "vendor",
-		"allow-plugins": {
+        "allow-plugins": {
             "typo3/cms-composer-installers": true
         }
     }
