@@ -38,4 +38,4 @@ jobs:
         run: ddev exec bin/codecept run acceptance -d -c Tests/codeception.yml
 
       - name: Deactivate Selenium Driver
-        run: mv "./.ddev/docker-compose.chrome.yaml.inactive" "./.ddev/docker-compose.chrome.yaml.inactive"
+        run: mv "./.ddev/docker-compose.chrome.yaml" "./.ddev/docker-compose.chrome.yaml.inactive"
