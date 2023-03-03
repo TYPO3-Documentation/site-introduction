@@ -25,6 +25,9 @@ jobs:
       - name: Install composer packages
         run: ddev composer install
 
+      - name: Create var folder
+        run: mkdir ./var
+
       - name: Allow public access of var folder
         run: sudo chmod 0777 ./var
 
