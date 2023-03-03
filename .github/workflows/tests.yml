@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Activate Selenium Driver
-        run: mv ".ddev/docker-compose.chrome.yaml.inactive" ".ddev/docker-compose.chrome.yaml"
+        run: mv "./.ddev/docker-compose.chrome.yaml.inactive" ".ddev/docker-compose.chrome.yaml"
 
       - name: Checkout
         uses: actions/checkout@v2
@@ -38,4 +38,4 @@ jobs:
         run: ddev exec bin/codecept run acceptance -d -c Tests/codeception.yml
 
       - name: Deactivate Selenium Driver
-        run: mv .ddev/docker-compose.chrome.yaml .ddev/docker-compose.chrome.yaml.inactive
+        run: mv "./.ddev/docker-compose.chrome.yaml" ".ddev/docker-compose.chrome.yaml.inactive"
