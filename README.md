@@ -13,6 +13,13 @@ and install DDEV https://github.com/drud/ddev/releases.
 * `ddev import-files --src=./assets`
 * `ddev composer install`
 
+# TYPO3 Version
+
+The development of this installation started with TYPO3 v11 (branch `main`).  
+There exists a branch `task/v10-0` with TYPO3 v10, currently there is no guarantee
+that this is running well though.  
+Future branches will include a version number that indicates the TYPO3 version.
+
 # Frontend
 
 * TYPO3: https://introduction.ddev.site
@@ -41,6 +48,12 @@ within the container without the need to log into it.
 * Database Export: `ddev exec php bin/typo3 ddev:exportdb`
 
 # Execute acceptance tests
+
+To execute acceptance tests the selenium service has to be enabled before starting DDEV.
+This can be done by renaming the file `.ddev/docker-compose.chrome.yaml.inactive`
+to `.ddev/docker-compose.chrome.yaml.inactive`.  
+Consideration for deactivating the service by default has been that other tests run
+significantly faster when this service is deactivated.
 
 The ddev setup comes with a selenium-chrome container, codeception and some
 acceptance tests ready to run.
