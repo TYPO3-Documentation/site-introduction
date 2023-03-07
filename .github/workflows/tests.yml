@@ -13,6 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Activate Selenium Driver
+        run: mv "./.ddev/docker-compose.chrome.yaml.inactive" "./.ddev/docker-compose.chrome.yaml"
+
       - name: Start DDEV
         uses: jonaseberle/github-action-setup-ddev@v1
 
@@ -25,8 +28,14 @@ jobs:
       - name: Install composer packages
         run: ddev composer install
 
+      - name: Create var folder
+        run: mkdir ./var
+
       - name: Allow public access of var folder
         run: sudo chmod 0777 ./var
 
       - name: Run acceptance tests
         run: ddev exec bin/codecept run acceptance -d -c Tests/codeception.yml
+
+      - name: Deactivate Selenium Driver
+        run: mv "./.ddev/docker-compose.chrome.yaml" "./.ddev/docker-compose.chrome.yaml.inactive"
