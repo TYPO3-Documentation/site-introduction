@@ -15,10 +15,12 @@ use_dns_when_possible: true
 composer_version: "2"
 
 
-# This config.yaml was created with ddev version v1.16.7
-# webimage: drud/ddev-webserver:v1.16.7
-# dbimage: drud/ddev-dbserver-mariadb-10.2:v1.16.0
-# dbaimage: phpmyadmin:5
+# This config.yaml was created with ddev version v1.21.6
+# webimage: drud/ddev-webserver:v1.21.6
+# dbimage: drud/ddev-dbserver-mariadb-10.2:v1.21.6
+# dbaimage: phpmyadmin:5.2.0
+timezone: ""
+
 # However we do not recommend explicitly wiring these images into the
 # config.yaml as they may break future versions of ddev.
 # You can update this config.yaml using 'ddev config'.
@@ -128,6 +130,7 @@ composer_version: "2"
 # The MailHog ports can be changed from the default 8025 and 8026
 
 # webimage_extra_packages: [php7.3-tidy, php-bcmath]
+
 # Extra Debian packages that are needed in the webimage can be added here
 
 # dbimage_extra_packages: [telnet,netcat]
@@ -159,6 +162,21 @@ composer_version: "2"
 # the user is responsible for mounting it manually or via a script.
 # This is to enable experimentation with alternate file mounting strategies.
 # For advanced users only!
+
+# use_dns_when_possible: true
+# If the host has internet access and the domain configured can
+# successfully be looked up, DNS will be used for hostname resolution
+# instead of editing /etc/hosts
+# Defaults to true
+
+# project_tld: ddev.site
+# The top-level domain used for project URLs
+# The default "ddev.site" allows DNS lookup via a wildcard
+# For backward compatibility this can be changed to "ddev.local"
+
+# ngrok_args: --subdomain mysite --auth "user:pass"
+# Provide extra flags to the "ngrok http" command, see
+# https://ngrok.com/docs#http or run "ngrok http -h"
 
 # provider: default # Currently either "default" or "pantheon"
 #
