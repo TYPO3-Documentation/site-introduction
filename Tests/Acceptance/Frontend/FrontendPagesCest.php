@@ -27,7 +27,12 @@ class FrontendPagesCest
      */
     public function firstPageIsRendered(AcceptanceTester $I)
     {
-        $I->amOnPage('/');
+        // This does not work as no slash is used anymore:
+        // $I->amOnPage('/');
+
+        // TODO: load URL by API
+        $I->amOnUrl('https://introduction.ddev.site');
+
         $I->see('Open source, enterprise CMS delivering  content-rich digital experiences on any channel,  any device, in any language');
         $I->click('Customize');
         $I->see('Incredible flexible');
