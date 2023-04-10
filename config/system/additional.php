@@ -1,10 +1,10 @@
 <?php
 
-$loader = new Dotenv\Dotenv(__DIR__ . '/../../', '.env.dist');
-$loader->overload();
+$loader = \Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/../../', '.env.dist');
+$loader->load();
 if (file_exists(__DIR__ . '/../../.env')) {
-    $loader = new Dotenv\Dotenv(__DIR__ . '/../../');
-    $loader->overload();
+    $loader = \Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/../../', '.env');
+    $loader->load();
 }
 
 // Database Credentials

@@ -2,7 +2,6 @@
 return [
     'BE' => [
         'debug' => true,
-        'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$2y$12$V8Xxf88bKuyJ6xlNnGQbKuBer/rDnBig8FknlCfSbSUchD8q686Pu',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
@@ -85,7 +84,6 @@ return [
         'processor_effects' => true,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
-        'processor_path_lzw' => '/usr/bin/',
     ],
     'MAIL' => [
         'transport' => 'sendmail',

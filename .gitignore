@@ -1,5 +1,9 @@
 /.ddev/docker-compose.yaml
+## this file must have a suffix '.inactive':
+/.ddev/docker-compose.chrome.yaml
+/.ddev/php/
 /bin
+/public/_assets
 /public/fileadmin/*
 /public/index.php
 /public/typo3
