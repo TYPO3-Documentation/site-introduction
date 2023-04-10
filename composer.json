@@ -10,16 +10,6 @@
     ],
     "minimum-stability": "dev",
     "prefer-stable" : true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "local_packages/*"
-        },
-        {
-            "type": "composer",
-            "url": "https://composer.typo3.org/"
-        }
-    ],
     "require": {
         "php": "^7.4.1 || ^8",
         "bk2k/bootstrap-package": "^12.0.0 || ^13.0.0",
