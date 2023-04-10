@@ -13,9 +13,7 @@
     "require": {
         "php": "^7.4.1 || ^8",
         "bk2k/bootstrap-package": "^12.0.0 || ^13.0.0",
-        "friendsoftypo3/feedit": "dev-11-12",
         "friendsoftypo3/sys-action": "dev-master",
-        "typo3/cms-adminpanel": "^11.5.23",
         "typo3/cms-backend": "^11.5.23",
         "typo3/cms-belog": "^11.5.23",
         "typo3/cms-beuser": "^11.5.23",
