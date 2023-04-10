@@ -4,7 +4,6 @@ return [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$2y$12$V8Xxf88bKuyJ6xlNnGQbKuBer/rDnBig8FknlCfSbSUchD8q686Pu',
-        'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
             'options' => [],
@@ -27,6 +26,7 @@ return [
             'loginFootnote' => '',
             'loginHighlightColor' => '',
             'loginLogo' => 'EXT:bootstrap_package/Resources/Public/Images/Backend/login-logo.svg',
+            'loginLogoAlt' => '',
         ],
         'bootstrap_package' => [
             'disableCssProcessing' => '0',
@@ -35,6 +35,7 @@ return [
             'disablePageTsBackendLayouts' => '0',
             'disablePageTsContentElements' => '0',
             'disablePageTsRTE' => '0',
+            'disablePageTsTCADefaults' => '0',
             'disablePageTsTCEFORM' => '0',
             'disablePageTsTCEMAIN' => '0',
         ],
@@ -45,6 +46,7 @@ return [
         'indexed_search' => [
             'catdoc' => '/usr/bin/',
             'debugMode' => '0',
+            'deleteFromIndexAfterEditing' => '1',
             'disableFrontendIndexing' => '0',
             'enableMetaphoneSearch' => '1',
             'flagBitMask' => '192',
@@ -71,7 +73,6 @@ return [
     ],
     'FE' => [
         'debug' => true,
-        'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
             'options' => [],
@@ -103,7 +104,6 @@ return [
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'Introduction',
-        'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,
         ],
