@@ -74,6 +74,9 @@ return [
         'beuser' => [
             'packagePath' => 'typo3/sysext/beuser/',
         ],
+        'dashboard' => [
+            'packagePath' => 'typo3/sysext/dashboard/',
+        ],
         'extensionmanager' => [
             'packagePath' => 'typo3/sysext/extensionmanager/',
         ],
@@ -110,11 +113,20 @@ return [
         'workspaces' => [
             'packagePath' => 'typo3/sysext/workspaces/',
         ],
+        'taskcenter' => [
+            'packagePath' => 'typo3conf/ext/taskcenter/',
+        ],
+        'sys_action' => [
+            'packagePath' => 'typo3conf/ext/sys_action/',
+        ],
         'bootstrap_package' => [
             'packagePath' => 'typo3conf/ext/bootstrap_package/',
         ],
         'ddev_utilities' => [
             'packagePath' => 'typo3conf/ext/ddev_utilities/',
+        ],
+        'feedit' => [
+            'packagePath' => 'typo3conf/ext/feedit/',
         ],
     ],
     'version' => 5,
