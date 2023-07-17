@@ -12,7 +12,7 @@
   "prefer-stable": true,
   "require": {
     "php": "^8.1",
-    "bk2k/bootstrap-package": "dev-master",
+    "bk2k/bootstrap-package": "^14.0",
     "typo3/cms-backend": "^12.4",
     "typo3/cms-belog": "^12.4",
     "typo3/cms-beuser": "^12.4",
