@@ -17,7 +17,7 @@ jobs:
         run: mv "./.ddev/docker-compose.chrome.yaml.inactive" "./.ddev/docker-compose.chrome.yaml"
 
       - name: Start DDEV
-        uses: jonaseberle/github-action-setup-ddev@v1
+        uses: ddev/github-action-setup-ddev@v1
 
       - name: Import database
         run: ddev import-db --src=./data/db.sql
