@@ -9,7 +9,7 @@ update-sitepackage: ## Update the site package
 
 .PHONY: update-composer
 update-composer: ## Update the site package
-	ddev composer update
+	ddev composer install
 
 .PHONY: setup
 setup:
