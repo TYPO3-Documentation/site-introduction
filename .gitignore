@@ -1,22 +1,6 @@
-/.ddev/docker-compose.yaml
-## this file must have a suffix '.inactive':
-/.ddev/docker-compose.chrome.yaml
-/.ddev/php/
-/bin
-/public/_assets
-/public/fileadmin/*
-/public/index.php
-/public/typo3
-/public/typo3conf/.gitignore
-/public/typo3conf/ENABLE_INSTALL_TOOL
-/public/typo3conf/realurl_autoconf.php
-/public/typo3conf/l10n
-/public/typo3conf/ext
-/public/typo3temp
-/public/uploads
-/var
-/vendor
+.idea/
 /.env
-/.idea
-composer.lock
-Tests/Acceptance/Support/_generated/
+/vendor
+/var/
+/public
+/packages/my_site_package/

@@ -1,0 +1,13 @@
+{
+  "base_package": "site_package_tutorial",
+  "typo3_version": 13.4,
+  "title": "My Site Package",
+  "description": "Site package to follow the tutorial. ",
+  "repository_url": "https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-SitePackage",
+  "author": {
+    "name": "J. Doe",
+    "email": "j.doe@example.org",
+    "company": "My Vendor",
+    "homepage": "https://docs.typo3.org/permalink/t3sitepackage:start"
+  }
+}

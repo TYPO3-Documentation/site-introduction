@@ -1,6 +1,14 @@
-version: '3.6'
-
 services:
   web:
     environment:
-      - TYPO3_CONTEXT=Development
+      - TYPO3_CONTEXT=Development/Local
+      - TYPO3_DB_DRIVER=mysqli
+      - TYPO3_DB_USERNAME=db
+      - TYPO3_DB_PORT=3306
+      - TYPO3_DB_HOST=db
+      - TYPO3_DB_DBNAME=db
+      - TYPO3_SETUP_ADMIN_EMAIL=j.doe@example.org
+      - TYPO3_SETUP_ADMIN_USERNAME=j.doe
+      - TYPO3_SETUP_CREATE_SITE=no
+      - TYPO3_PROJECT_NAME="Automated Setup"
+      - TYPO3_SERVER_TYPE=other

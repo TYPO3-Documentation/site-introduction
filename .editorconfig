@@ -25,11 +25,6 @@ indent_size = 4
 indent_style = space
 indent_size = 4
 
-# LESS-Files
-[*.less]
-indent_style = space
-indent_size = 4
-
 # JS-Files
 [*.js]
 indent_style = space
@@ -60,7 +55,21 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
-# package.json or composer.json
-[{package.json,composer.json}]
+# package.json
+[package.json]
 indent_style = space
 indent_size = 2
+
+# composer.json
+[composer.json]
+indent_style = space
+indent_size = 4
+
+# phpstan
+[*.neon]
+indent_style = tab
+
+[Makefile]
+# Use tabs for indentation (Makefiles require tabs)
+indent_style = tab
+

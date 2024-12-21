@@ -1,0 +1,14 @@
+base: 'https://site-introduction.ddev.site'
+dependencies:
+  - my-vendor/my-site-package
+languages:
+  -
+    title: English
+    enabled: true
+    locale: en_US.UTF-8
+    base: /
+    navigationTitle: English
+    flag: us
+    languageId: 0
+rootPageId: 1
+websiteTitle: ''
