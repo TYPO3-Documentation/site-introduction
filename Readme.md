@@ -15,6 +15,17 @@ ddev start
 make install
 ```
 
+A backend user called `j.doe` will be created for you. You can choose the password during the setup.
+
+Log into the backend at
+
+```
+https://site-introduction.ddev.site/typo3
+```
+
+Currently, you have to switch the backend layout for the root page to default, we need to fix this
+in the site package builder.
+
 ## Update
 
 If there have been changes to the example data first delete and recreate the database:
