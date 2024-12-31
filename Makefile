@@ -20,7 +20,12 @@ setup:
 update: update-sitepackage update-composer ## Update everything
 
 .PHONY: install
-install: update setup ## Install everything
+install: update restart setup ## Install everything
+
+.PHONY: restart
+restart: ## Restart DDEV
+	@echo "Restarting DDEV to ensure it can detect TYPO3 version and create additional.php"
+	ddev restart
 
 .PHONY: delete
 delete: ## Delete DDEV and Database
