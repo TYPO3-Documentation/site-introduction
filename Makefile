@@ -13,10 +13,8 @@ update-composer: ## Update the site package
 
 .PHONY: setup
 setup:
-	@echo "Please note: The password to use during the interactive setup is 'db'."
-	ddev typo3 setup --force
+	ddev typo3 setup --force  --create-site '' --password 'db'
 	ddev typo3 extension:setup
-	@echo "Please note: The password to use during the interactive setup is 'db'."
 
 .PHONY: update
 update: update-sitepackage update-composer ## Update everything
