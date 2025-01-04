@@ -3,6 +3,9 @@
 This project should be used to make screenshots for the TYPO3 Documentation. See also
 [Guidelines for creating images](https://docs.typo3.org/permalink/h2document:guidelines-for-images)
 
+> [!WARNING]
+> Do not use this project for real world projects, it is just a quick way to create screenshots locally.
+
 Prerequisites:
 
 * Docker and DDEV
