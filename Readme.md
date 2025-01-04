@@ -43,6 +43,13 @@ Then regenerate the site package and update composer:
 make update
 ```
 
+## Create example editors
+
+```
+make create-editors
+make update-page-permissions
+```
+
 ## Delete the project from your system
 
 ```
