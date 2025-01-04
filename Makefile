@@ -25,7 +25,7 @@ create-editors:
 
 .PHONY: update-page-permissions
 update-page-permissions:
-	ddev exec -s db 'mysql --database=mysql -e "UPDATE pages set perms_groupid=1"'
+	ddev exec -s db 'mysql --database=mysql -e "UPDATE db.pages set perms_groupid=1"'
 
 .PHONY: update
 update: update-sitepackage update-composer update-page-permissions ## Update everything
