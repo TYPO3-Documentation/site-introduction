@@ -16,11 +16,22 @@ setup:
 	ddev typo3 setup --force  --create-site '' --password 'db'
 	ddev typo3 extension:setup
 
+.PHONY: create-editors
+create-editors:
+	ddev typo3 setup:begroups:default -g Both
+	ddev typo3 backend:user:create --username=e.doe --password=UnsaFe123! --groups=1 --email=e.doe@example.org --no-interaction
+	ddev typo3 backend:user:create --username=a.doe --password=UnsaFe123! --groups="1,2" --email=a.doe@example.org --no-interaction
+	@echo "User e.doe demonstrates standard editor permissions, a.doe advanced editor permissions"
+
+.PHONY: update-page-permissions
+update-page-permissions:
+	ddev exec -s db 'mysql --database=mysql -e "UPDATE pages set perms_groupid=1"'
+
 .PHONY: update
-update: update-sitepackage update-composer ## Update everything
+update: update-sitepackage update-composer update-page-permissions ## Update everything
 
 .PHONY: install
-install: update restart setup ## Install everything
+install: update restart setup create-editors update-page-permissions ## Install everything
 
 .PHONY: restart
 restart: ## Restart DDEV
