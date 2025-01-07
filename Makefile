@@ -31,7 +31,7 @@ update-page-permissions:
 update: update-sitepackage update-composer update-page-permissions ## Update everything
 
 .PHONY: install
-install: update restart setup create-editors update-page-permissions ## Install everything
+install: update-sitepackage update-composer restart setup create-editors update-page-permissions ## Install everything
 
 .PHONY: restart
 restart: ## Restart DDEV
