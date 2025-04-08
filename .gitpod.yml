@@ -2,10 +2,11 @@ tasks:
   - name: Setup TYPO3
     init: |
       cp .env.gitpod .env || true
+      cp config/system/additional-gitpod.php config/system/additional.php || true
       chmod +x gitpod-setup.sh
       ./gitpod-setup.sh
     command: |
-      symfony serve --dir=public --no-tls --port=8000
+      php -S 0.0.0.0:8000 -t public > /dev/null 2>&1 &
 
 ports:
   - port: 8000
