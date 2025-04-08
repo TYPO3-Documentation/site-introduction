@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Setup TYPO3
+    init: |
+      cp .env.gitpod .env || true
+      ./gitpod-setup.sh
+    command: |
+      symfony serve --dir=public --no-tls --port=8000
+
+ports:
+  - port: 8000
+    onOpen: open-preview
