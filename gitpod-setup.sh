@@ -26,4 +26,3 @@ vendor/bin/typo3 backend:user:create --username=a.doe --password=UnsaFe123! --gr
 echo "User e.doe demonstrates standard editor permissions, a.doe advanced editor permissions"
 
 echo "TYPO3 is ready at http://localhost:8000 (user: j.doe / UnsaFe123!)"
-php -S 0.0.0.0:8000 -t public > /dev/null 2>&1 &
