@@ -3,7 +3,9 @@
 set -e
 
 if [ -f .env ]; then
-  export $(grep -v '^#' .env | xargs)
+  set -o allexport
+  source .env
+  set +o allexport
 fi
 
 ./Build/DownloadSitePackage/generate_sitepackage.sh
