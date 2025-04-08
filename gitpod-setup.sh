@@ -2,6 +2,10 @@
 
 set -e
 
+if [ -f .env ]; then
+  export $(grep -v '^#' .env | xargs)
+fi
+
 ./Build/DownloadSitePackage/generate_sitepackage.sh
 
 # 1. Install dependencies
