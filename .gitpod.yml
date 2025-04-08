@@ -6,7 +6,8 @@ tasks:
       chmod +x gitpod-setup.sh
       ./gitpod-setup.sh
     command: |
-      php -S 0.0.0.0:8000 -t public > /dev/null 2>&1 &
+      pkill -f "php -S" || true
+      php -S 0.0.0.0:8000 -t public > /tmp/typo3-server.log 2>&1 &
 
 ports:
   - port: 8000
