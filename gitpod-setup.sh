@@ -2,15 +2,13 @@
 
 set -e
 
+./Build/DownloadSitePackage/generate_sitepackage.sh
+
 # 1. Install dependencies
 composer install
 
-# 2. Create required directories
-mkdir -p var/log public/fileadmin public/typo3temp public/uploads
-chmod -R 0777 var public/fileadmin public/typo3temp public/uploads
-
 # 3. Run TYPO3 setup
-vendor/bin/typo3 setup --force --database-user-name=typo3 --database-user-password=password --database-name=typo3 --use-existing-database --site-name="Gitpod Demo" --admin-user-name=admin --admin-password=admin --admin-email=admin@example.com
+vendor/bin/typo3 setup --force --no-interaction
 
 # 4. Install extensions
 vendor/bin/typo3 extension:setup
@@ -21,4 +19,7 @@ vendor/bin/typo3 backend:user:create --username=e.doe --password=UnsaFe123! --gr
 vendor/bin/typo3 backend:user:create --username=a.doe --password=UnsaFe123! --groups=1,2 --email=a.doe@example.org --no-interaction
 echo "User e.doe demonstrates standard editor permissions, a.doe advanced editor permissions"
 
-echo "TYPO3 is ready at http://localhost:8000 (user: admin / admin)"
+echo "Updating page permissions in SQLite..."
+sqlite3 var/sqlite.db "UPDATE pages SET perms_groupid=1;"
+
+echo "TYPO3 is ready at http://localhost:8000 (user: j.doe / UnsaFe123!)"
