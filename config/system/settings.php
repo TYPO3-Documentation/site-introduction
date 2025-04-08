@@ -11,17 +11,8 @@ return [
     'DB' => [
         'Connections' => [
             'Default' => [
-                'charset' => 'utf8mb4',
-                'dbname' => 'db',
-                'defaultTableOptions' => [
-                    'charset' => 'utf8mb4',
-                    'collation' => 'utf8mb4_unicode_ci',
-                ],
-                'driver' => 'mysqli',
-                'host' => 'db',
-                'password' => 'db',
-                'port' => 3306,
-                'user' => 'db',
+                'driver' => 'pdo_sqlite',
+                'path' => 'var/sqlite.db',
             ],
         ],
     ],
