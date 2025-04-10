@@ -4,6 +4,11 @@
 	"name": "Docker in Docker",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"customizations": {
+		"vscode": {
+		  "extensions": ["biati.ddev-manager"]
+		}
+	  },
 
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
@@ -18,10 +23,4 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "bash .devcontainer/ddev-install.sh  && mkcert -install && ddev start -y"
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }

@@ -2,7 +2,7 @@
 return [
     'BE' => [
         'debug' => true,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$NVVKWFQwcTB5UVZiNFJDcg$8nj6DaM9Y4sLUB85c06aROOD8CSoUrYag1yRlEvKasc',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$SVFkMlY0ekVGTEhDVlM4Rw$nquyj9Ip4s4ZCLJkiqlJEAt8UATdDh36NeXnNrnGfuo',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -11,8 +11,17 @@ return [
     'DB' => [
         'Connections' => [
             'Default' => [
-                'driver' => 'pdo_sqlite',
-                'path' => 'var/sqlite.db',
+                'charset' => 'utf8mb4',
+                'dbname' => 'db',
+                'defaultTableOptions' => [
+                    'charset' => 'utf8mb4',
+                    'collation' => 'utf8mb4_unicode_ci',
+                ],
+                'driver' => 'mysqli',
+                'host' => 'db',
+                'password' => 'db',
+                'port' => 3306,
+                'user' => 'db',
             ],
         ],
     ],
@@ -94,7 +103,7 @@ return [
         ],
         'devIPmask' => '*',
         'displayErrors' => 1,
-        'encryptionKey' => 'd01ef4c5e4f98b6a17721c0498b63cb4b3af2de5f34805b90538f6a42cd76d7df0053e2f29bdcdf1f875bfd22f81a2c5',
+        'encryptionKey' => '8b03b54548b6def0f1b97d050e28bc49bb7ef364373b2d22b7a9b78c803e2dc3c11a6d4bcbd982766e75a4574fe66d8b',
         'exceptionalErrors' => 12290,
         'features' => [
             'frontend.cache.autoTagging' => true,

@@ -1,4 +1,4 @@
-base: 'https://site-introduction.ddev.site'
+base: '/'
 dependencies:
   - my-vendor/my-site-package
 languages:
