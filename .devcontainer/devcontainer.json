@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-in-docker
+{
+	"name": "Docker in Docker",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"customizations": {
+		"vscode": {
+		  "extensions": ["ms-azuretools.vscode-docker"]
+		}
+	},
+	"containerEnv": {
+		// Ignore new version prompt: https://github.com/ddev/ddev/issues/1882
+		"DDEV_NO_INSTRUMENTATION": "true"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "bash .devcontainer/ddev-install.sh  && mkcert -install && ddev start -y && make delete-db && make install"
+}

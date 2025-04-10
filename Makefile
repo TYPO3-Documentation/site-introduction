@@ -44,7 +44,6 @@ delete: ## Delete DDEV and Database
 	rm -rf vendor
 	rm -rf var
 	rm -rf public
-	rm config/system/additional.php
 
 .PHONY: delete-db
 delete-db: ## Delete DDEV and Database
