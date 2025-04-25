@@ -9,5 +9,6 @@ services:
       - TYPO3_DB_DBNAME=db
       - TYPO3_SETUP_ADMIN_EMAIL=j.doe@example.org
       - TYPO3_SETUP_ADMIN_USERNAME=j.doe
+      - TYPO3_SETUP_ADMIN_PASSWORD=Password.1
       - TYPO3_PROJECT_NAME="Automated Setup"
       - TYPO3_SERVER_TYPE=other

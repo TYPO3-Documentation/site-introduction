@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 20,
+    "explorer.compactFolders": false, 
+    "workbench.editorAssociations": {   
+      "*.md": "vscode.markdown.preview.editor"
+    }
+  }
