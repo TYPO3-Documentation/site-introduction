@@ -1,6 +1,6 @@
 # Ready to use Project for screenshots
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TYPO3-Documentation/site-introduction)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?template_repository=TYPO3-Documentation/site-introduction)
 
 This project should be used to make screenshots for the TYPO3 Documentation. See also
 [Guidelines for creating images](https://docs.typo3.org/permalink/h2document:guidelines-for-images)
