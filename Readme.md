@@ -25,6 +25,12 @@ To get started:
 
 You're now logged in as an administrator and can start creating screenshots.
 
+When you open your codespace the next time you need to start DDEV manually:
+
+```
+ddev start
+```
+
 
 ## Local Installation
 
