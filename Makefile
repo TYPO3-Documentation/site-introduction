@@ -5,7 +5,7 @@ help: ## Displays this list of targets with descriptions
 
 .PHONY: update-sitepackage
 update-sitepackage: ## Update the site package
-	./Build/DownloadSitePackage/generate_sitepackage.sh
+	ddev exec ./Build/DownloadSitePackage/generate_sitepackage.sh
 
 .PHONY: update-composer
 update-composer: ## Update the site package
