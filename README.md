@@ -1,7 +1,5 @@
 # Ready to use Project for Screenshots
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/TYPO3-Documentation/site-introduction)
-
 This project is intended to create consistent screenshots for the official TYPO3 Documentation.
 For visual style guidance, refer to the
 [Guidelines for creating images](https://docs.typo3.org/permalink/h2document:guidelines-for-images)
