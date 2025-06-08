@@ -1,4 +1,4 @@
-name: site-introduction
+name: typo3-screenshots-standalone
 type: typo3
 docroot: public
 php_version: "8.3"

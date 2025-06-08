@@ -1,0 +1,9 @@
+services:
+  typo3:
+    build:
+      context: .
+    container_name: my-typo3
+    ports:
+      - "8082:80"
+    environment:
+      TYPO3_CONTEXT: Development/Docker
