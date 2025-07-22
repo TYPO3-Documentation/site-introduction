@@ -35,6 +35,11 @@ return [
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
+        'ext_kickstarter' => [
+            'activateModule' => '0',
+            'exportDirectory' => 'packages',
+            'preferredExtension' => 'test',
+        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
