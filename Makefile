@@ -46,5 +46,5 @@ delete: ## Delete DDEV and Database
 	rm -rf public
 
 .PHONY: delete-db
-delete-db: ## Delete DDEV and Database
+delete-db: ## Delete Database in DDEV
 	ddev exec -s db 'mysql --database=mysql -e "DROP DATABASE db; CREATE DATABASE db;"'
