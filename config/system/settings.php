@@ -39,6 +39,13 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'kickstarter' => [
+            'activateModule' => '0',
+            'exportDirectory' => 'packages',
+        ],
+        'scheduler' => [
+            'maxLifetime' => '1440',
+        ],
     ],
     'FE' => [
         'cacheHash' => [
