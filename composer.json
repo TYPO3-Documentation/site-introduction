@@ -26,6 +26,7 @@
 	"require": {
 		"friendsoftypo3/content-blocks": "^1.0",
 		"my-vendor/my-site-package": "@dev",
+		"t3docs/blog-example": "@dev",
 		"typo3/cms-backend": "^13.4",
 		"typo3/cms-belog": "^13.4",
 		"typo3/cms-beuser": "^13.4",

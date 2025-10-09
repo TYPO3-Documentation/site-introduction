@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e69ba1cdb447743f6de59f2a39d9ec53",
+    "content-hash": "0f156d5eea70b54b6d6cbda12d35dd1f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5145,6 +5145,42 @@
             "time": "2025-08-27T11:34:33+00:00"
         },
         {
+            "name": "t3docs/blog-example",
+            "version": "dev-test",
+            "dist": {
+                "type": "path",
+                "url": "packages/blog_example",
+                "reference": "7339eaf3aa311614b10455feafe0e1f713dc6d5a"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "blog_example"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "T3docs\\BlogExample\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Documentation Team",
+                    "email": ""
+                }
+            ],
+            "description": "This extension contains code examples used in TYPO3 explained to describe the use of Extbase.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "typo3/class-alias-loader",
             "version": "v1.2.0",
             "source": {
@@ -7622,11 +7658,11 @@
         },
         {
             "name": "friendsoftypo3/kickstarter",
-            "version": "dev-bugfix/plugin",
+            "version": "dev-task/tests",
             "dist": {
                 "type": "path",
                 "url": "_git/ext-kickstarter",
-                "reference": "084b387b84c44325ed63949e02f1d9c33a3d8dff"
+                "reference": "453124f971caf690e2f113df0967341f696b322e"
             },
             "require": {
                 "ext-curl": "*",
@@ -8611,7 +8647,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsoftypo3/kickstarter": 20,
-        "my-vendor/my-site-package": 20
+        "my-vendor/my-site-package": 20,
+        "t3docs/blog-example": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
