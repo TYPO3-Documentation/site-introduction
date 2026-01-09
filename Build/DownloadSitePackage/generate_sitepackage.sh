@@ -10,7 +10,6 @@ mkdir -p packages
 # download
 curl -L -H 'accept: application/zip' "$ZIP_URL" --output "$ZIP_FILE"
 
-# clean target (incl dotfiles)
 mkdir -p "$TARGET_DIR"
 rm -rf "${TARGET_DIR:?}/"*
 rm -rf "${TARGET_DIR:?}"/.[!.]* "${TARGET_DIR:?}"/..?* 2>/dev/null || true
@@ -22,7 +21,7 @@ unzip -q "$ZIP_FILE" -d "$TMP_DIR"
 # GitHub zip contains a single wrapper dir, e.g. "site_package-update-v14/"
 EXTRACTED_DIR="$(find "$TMP_DIR" -mindepth 1 -maxdepth 1 -type d | head -n 1)"
 
-rsync -a --delete "$EXTRACTED_DIR"/ "$TARGET_DIR"/
+cp -a "$EXTRACTED_DIR"/. "$TARGET_DIR"/
 
 rm -rf "$TMP_DIR"
 rm -f "$ZIP_FILE"
