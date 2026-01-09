@@ -107,6 +107,7 @@ return [
         'exceptionalErrors' => 12290,
         'features' => [
             'frontend.cache.autoTagging' => true,
+            'security.system.enforceAllowedFileExtensions' => true,
         ],
         'sitename' => '"Automated Setup"',
         'systemMaintainers' => [
