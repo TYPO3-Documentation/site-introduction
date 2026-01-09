@@ -14,6 +14,8 @@ For visual style guidance, refer to the
 You can run the screenshot project locally using the prebuilt Docker image:
 
 ```bash
+docker pull linawolf/typo3-screenshots
+docker rm -f typo3-screenshots
 docker run -d --name typo3-screenshots -p 8080:80 linawolf/typo3-screenshots
 ```
 
