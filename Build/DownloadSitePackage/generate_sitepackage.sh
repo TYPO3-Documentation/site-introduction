@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ZIP_URL="https://github.com/TYPO3-Documentation/site_package/archive/refs/heads/update%2Fv14.zip"
+ZIP_URL="https://github.com/TYPO3-Documentation/site_package/archive/refs/heads/main.zip"
 ZIP_FILE="packages/site_package-update-v14.zip"
 TARGET_DIR="packages/site_package"
 
