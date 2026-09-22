@@ -20,7 +20,7 @@ echo "▶ Running automated TYPO3 setup..."
   --admin-username 'j.doe' \
   --admin-user-password 'Password.1' \
   --admin-email 'j.doe@example.org' \
-  --create-site '' \
+  --create-site 'no' \
   --project-name "TYPO3 Docs Demo" \
   --server-type 'apache'
 

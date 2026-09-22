@@ -13,7 +13,7 @@ update-composer: ## Update the site package
 
 .PHONY: setup
 setup:
-	ddev typo3 setup --force  --create-site '' --password 'db'
+	ddev typo3 setup --force  --create-site 'no' --password 'db'
 	ddev typo3 extension:setup
 
 .PHONY: create-editors
